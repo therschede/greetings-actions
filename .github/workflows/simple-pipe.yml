@@ -30,7 +30,7 @@ jobs:
     - name: Dump context for runner
     env:
       RUNNER_CONTEXT: ${{ toJSON(runner) }}
-      run:
+      run: |
         echo "::debug::Runner context is above."
 
   build:
